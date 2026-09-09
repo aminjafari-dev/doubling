@@ -1,0 +1,16 @@
+{
+  "name": "doubling-chrome-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Audio-only live tab-dubbing Chrome extension prototype (TypeScript, BYOK Gemini Live Translate).",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "clean": "node -e \"import('fs').then(fs => fs.rmSync('dist', { recursive: true, force: true }))\""
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.2.0",
+    "typescript": "^5.6.0"
+  }
+}

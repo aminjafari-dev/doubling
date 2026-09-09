@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Doubling — Live Tab Dubbing (MVP)",
+  "short_name": "Doubling",
+  "version": "0.1.0",
+  "description": "Capture the active tab and hear it live-dubbed in another language using your own Gemini API key.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "Doubling",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "service-worker/sw.js",
+    "type": "module"
+  },
+  "permissions": ["tabCapture", "offscreen", "storage", "activeTab"],
+  "host_permissions": [
+    "wss://generativelanguage.googleapis.com/*",
+    "https://generativelanguage.googleapis.com/*"
+  ]
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Doubling <span class="tag">MVP</span></h1>
+      <p class="hint">Dub the active tab with your own Gemini key. Key stays on this device.</p>
+
+      <label class="field">
+        <span>Gemini API key</span>
+        <div class="row">
+          <input id="apiKey" type="password" placeholder="AIza…" autocomplete="off" spellcheck="false" />
+          <button id="toggleKey" type="button" title="Show or hide key">Show</button>
+        </div>
+      </label>
+
+      <label class="field">
+        <span>Dub into</span>
+        <select id="language"></select>
+      </label>
+
+      <label class="field">
+        <span>Original volume <b id="originalVolumeLabel">25%</b></span>
+        <input id="originalVolume" type="range" min="0" max="100" value="25" />
+      </label>
+
+      <label class="field">
+        <span>Dubbed volume <b id="dubbedVolumeLabel">100%</b></span>
+        <input id="dubbedVolume" type="range" min="0" max="100" value="100" />
+      </label>
+
+      <div class="row buttons">
+        <button id="startBtn" type="button" class="primary">Start dubbing</button>
+        <button id="stopBtn" type="button" hidden>Stop</button>
+      </div>
+
+      <p id="status" class="status">Idle.</p>
+      <p id="error" class="error" hidden></p>
+
+      <p class="hint small">
+        Needs a normal website tab that is playing sound. Get a free key at
+        Google AI Studio (aistudio.google.com).
+      </p>
+    </main>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

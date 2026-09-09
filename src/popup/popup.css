@@ -1,0 +1,118 @@
+body {
+  width: 320px;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #14161c;
+  color: #eef0f4;
+}
+
+main {
+  padding: 14px 14px 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 2px;
+}
+
+.tag {
+  font-size: 10px;
+  background: #2b6cb0;
+  border-radius: 4px;
+  padding: 1px 5px;
+  vertical-align: middle;
+}
+
+.hint {
+  font-size: 12px;
+  color: #aab0bd;
+  margin: 4px 0 10px;
+}
+
+.hint.small {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.field {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.field span {
+  display: block;
+  margin-bottom: 4px;
+  color: #c9cfda;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+}
+
+input[type='password'],
+input[type='text'],
+select {
+  flex: 1;
+  min-width: 0;
+  background: #1f2330;
+  border: 1px solid #343b4d;
+  border-radius: 6px;
+  color: #eef0f4;
+  padding: 7px 8px;
+  font-size: 13px;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+button {
+  background: #232936;
+  border: 1px solid #3a4358;
+  border-radius: 6px;
+  color: #eef0f4;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 7px 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.primary {
+  background: #2b6cb0;
+  border-color: #2b6cb0;
+  flex: 1;
+  font-size: 14px;
+  padding: 9px 10px;
+}
+
+#stopBtn {
+  flex: 1;
+  font-size: 14px;
+  padding: 9px 10px;
+}
+
+.buttons {
+  margin-top: 4px;
+}
+
+.status {
+  font-size: 12px;
+  color: #9ae6b4;
+  margin: 10px 0 0;
+}
+
+.error {
+  font-size: 12px;
+  color: #feb2b2;
+  background: #3b1d1d;
+  border: 1px solid #742a2a;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 8px 0 0;
+}
